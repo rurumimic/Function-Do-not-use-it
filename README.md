@@ -12,7 +12,7 @@
 
 ---
 
-<img src="images/dontuseit.jpg" style="max-width: 500px; width:100%">
+<img src="images/dontuseit.jpg" width="500px">
 
 ---
 

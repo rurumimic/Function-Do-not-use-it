@@ -6,9 +6,9 @@
 
 ### 간단한 함수
 
-| 수학 함수                                                       | 좌표 평면과 그래프                                                                 |
-| --------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| ![f(x) = \frac{1}{\sqrt{x}}](../images/inverse-square-root.svg) | <img src="../images/inverse-square-root.png" style="max-width: 300px; width:100%"> |
+| 수학 함수                                                       | 좌표 평면과 그래프                                          |
+| --------------------------------------------------------------- | ----------------------------------------------------------- |
+| ![f(x) = \frac{1}{\sqrt{x}}](../images/inverse-square-root.svg) | <img src="../images/inverse-square-root.png" width="300px"> |
 
 ```c
 float y = 1 / sqrt(x);
@@ -70,9 +70,9 @@ subs(g, [x, r], [3, 2])
 
 ## 함수의 합성: 분해와 조립
 
-| 함수 합성                                                                                                                                                                                         | 새로운 함수                                                                                                                                                                                                                                        |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="../images/funcmachine.png" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Function_machine5.svg/1280px-Function_machine5.svg.png" style="max-width: 300px; width:100%"> | <img src="../images/composition.png" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Example_for_a_composition_of_two_functions.svg/499px-Example_for_a_composition_of_two_functions.svg.png" style="max-width: 300px; width:100%"> |
+| 함수 합성                                                                                                                                                                   | 새로운 함수                                                                                                                                                                                                                  |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="../images/funcmachine.png" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Function_machine5.svg/1280px-Function_machine5.svg.png" height="400px"> | <img src="../images/composition.png" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Example_for_a_composition_of_two_functions.svg/499px-Example_for_a_composition_of_two_functions.svg.png" height="400px"> |
 
 ```c
 int f(int x) { return x * x; }
