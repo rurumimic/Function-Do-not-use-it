@@ -8,7 +8,7 @@
 2. [함수](docs/function.md)
 3. [함수형 프로그래밍이 필요한 이유](docs/why-functional.md)
    - 고차 함수 [Higher-order Function](docs/high-order-function.md)
-   - 느긋한 계산 [Lazy Computing](docs/lazy-evaluation.md)
+   - 느긋한 계산 [Lazy Evaluation](docs/lazy-evaluation.md)
 
 ---
 
@@ -48,7 +48,7 @@
 
 - 순수 함수 pure function
 - 같은 입력값을 넣으면 항상 똑같은 결과값이 나온다: [절차형 vs 함수형](docs/imperative-vs-functional.md)
-- **언제든지** 마음껏 실행할 수 있다.: **[나중에 계산하기](docs/lazy-computing.md)**
+- **언제든지** 마음껏 실행할 수 있다.: **[나중에 계산하기](docs/lazy-evaluation.md)**
 - 테스트하기 쉽다.
 
 #### 액션
