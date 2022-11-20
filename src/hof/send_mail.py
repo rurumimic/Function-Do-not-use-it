@@ -11,7 +11,11 @@ def goodbye(name):
 
 
 if __name__ == "__main__":
+    import inspect
+
     email_to = make_mail(hello)
+    print(type(email_to), inspect.signature(email_to)) # <class 'function'>, (name)
+
     print(email_to("Alice"))
     print(email_to("Charlie"))
 

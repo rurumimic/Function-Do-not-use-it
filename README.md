@@ -94,6 +94,7 @@
   - [Data Oriented Design과 Cache Miss](http://rapapa.net/?p=2792)
   - [어떤 프로그래밍 언어들이 함수형인가?](https://medium.com/@jooyunghan/%EC%96%B4%EB%96%A4-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%96%B8%EC%96%B4%EB%93%A4%EC%9D%B4-%ED%95%A8%EC%88%98%ED%98%95%EC%9D%B8%EA%B0%80-fec1e941c47f)
   - [함수형 프로그래밍이란 무엇인가?](https://medium.com/@jooyunghan/%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-fab4e960d263)
+  - [SOLID principles in Functional Programming](https://medium.com/@mkocik/solid-principles-in-functional-programming-b9b83aeddf80)
 - Book
   - [Grokking Simplicity](https://www.manning.com/books/grokking-simplicity?query=grokking) by Eric Normand
   - [쏙쏙 들어오는 함수형 코딩](https://jpub.tistory.com/1265)

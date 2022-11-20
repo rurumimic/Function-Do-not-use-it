@@ -50,6 +50,11 @@ applyTwice (++ " HAHA") "HEY" -- "HEY HAHA HAHA"
 applyTwice (3:) [1] -- [3,3,1]
 ```
 
+- 리스코프 치환 Liskov substitution
+  1. 자료형 S가 자료형 T의 서브타입일 때
+  2. 필요한 프로그램의 속성(정확성, 수행하는 업무 등)의 변경 없이
+  3. 자료형 T의 객체를 자료형 S의 객체로 교체(치환)
+
 ---
 
 ### 고차 함수의 합성
@@ -84,11 +89,17 @@ reduce(add, islice(filter(lambda x: x % 2 == 0, map(lambda x: x + 1, count())), 
 ;; => 30
 ```
 
+- 개방-폐쇄 Open-Closed
+  1. 확장에 대해 열려 있다.
+  2. 수정에 대해서는 닫혀 있다.
+
 ---
 
 ### Currying
 
-예제: [send_mail.py](../src/hof/send_mail.py)
+#### 예제: 이메일 작성
+
+[send_mail.py](../src/hof/send_mail.py)
 
 - 입력: `func` 함수
 - 출력: `inner(name)` 함수
@@ -110,16 +121,63 @@ def goodbye(name):
     return "Goodbye, " + name
 ```
 
-실행 결과:
+부분 함수 partial application:
 
 ```py
 email_to = make_mail(hello)
+
+type(email_to)              # <class 'function'>
+inspect.signature(email_to) # (name)
+```
+
+실행:
+
+```py
 email_to("Alice") # Hello, Alice
 email_to("Charlie") # Hello, Charlie
 
 make_mail(goodbye)("Alice") # Goodbye, Alice
 make_mail(goodbye)("Charlie") # Goodbye, Charlie
 ```
+
+하스켈에서 커링:
+
+```hs
+sendMail :: String -> String -> String
+```
+
+#### 예제: 데이터베이스 연결
+
+[connect_db.py](../src/hof/connect_db.py)
+
+```py
+def connect(server):
+    print("Connect: " + server)
+    def query(sql):
+        print(sql) # run somthing...
+        return
+    return query
+```
+
+```py
+query = connect("mysql://host:3306")      # Connect: mysql://host:3306
+users = query("SELECT ID FROM USER;")
+query("UPDATE USER SET NAME='Alice' WHERE ID=1;")
+
+query = connect("postgresql://user@host") # Connect: postgresql://user@host
+users = query("SELECT ID FROM USER;")
+```
+
+하스켈에서 커링:
+
+```hs
+connect :: String -> String -> String
+```
+
+- 의존성 주입 Dependency Injection
+- 전략 패턴 Strategy Pattern
+- 데코레이터 패턴 Decorator Pattern
+- 팩토리 패턴 Factory Pattern
 
 ---
 
