@@ -171,7 +171,8 @@ users = query("SELECT ID FROM USER;")
 하스켈에서 커링:
 
 ```hs
-connect :: String -> String -> String
+connect :: DBConnection -> SQL -> Database Result
+query :: SQL -> Database Result
 ```
 
 - 의존성 주입 Dependency Injection
