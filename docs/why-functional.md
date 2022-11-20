@@ -1,6 +1,7 @@
 # 함수형 프로그래밍이 필요한 이유
 
-논문: [Why Functional Programming Matters](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf) by John Hughes. 1990.
+- 논문: [Why Functional Programming Matters](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf) by John Hughes. 1990.
+- YouTube: [Why Functional Programming Matters](https://youtu.be/XrNdvWqxBvA)
 
 > 함수형 프로그래머들은 
 > 함수형 프로그래밍의 장점을 제대로 설명하지 못한다.
