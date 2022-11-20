@@ -18,6 +18,17 @@
 - 제네릭 프로그래밍 generic programming
   - 데이터 형식에 제약받지 않고 재사용성을 높이는 설계
 
+#### Python
+
+```python
+def apply_twice(f, x):
+    return f(f(x))
+
+apply_twice(lambda x: x + 3, 10) # 16
+apply_twice(lambda x: x + " HAHA", "HEY") # 'HEY HAHA HAHA'
+apply_twice(lambda x: [3] + x, [1]) # [3, 3, 1]
+```
+
 #### Haskell
 
 - [applyTwice.hs](../src/hof/applyTwice.hs)
@@ -29,17 +40,6 @@ applyTwice f x = f (f x)
 applyTwice (+3) 10 -- 16
 applyTwice (++ " HAHA") "HEY" -- "HEY HAHA HAHA"
 applyTwice (3:) [1] -- [3,3,1]
-```
-
-#### Python
-
-```python
-def apply_twice(f, x):
-    return f(f(x))
-
-apply_twice(lambda x: x + 3, 10) # 16
-apply_twice(lambda x: x + " HAHA", "HEY") # 'HEY HAHA HAHA'
-apply_twice(lambda x: [3] + x, [1]) # [3, 3, 1]
 ```
 
 ---
@@ -54,6 +54,15 @@ apply_twice(lambda x: [3] + x, [1]) # [3, 3, 1]
 - reduce
 - 익명 함수 Anonymous function: lambda
 
+#### python
+
+- [example.py](../src/hof/example.py)
+
+```py
+reduce(add, islice(filter(lambda x: x % 2 == 0, map(lambda x: x + 1, count())), 5))
+# 30
+```
+
 #### clojure
 
 - [example.clj](../src/hof/example.clj)
@@ -65,15 +74,6 @@ apply_twice(lambda x: [3] + x, [1]) # [3, 3, 1]
      (take 5)
      (reduce +)) 
 ;; => 30
-```
-
-#### python
-
-- [example.py](../src/hof/example.py)
-
-```py
-reduce(add, islice(filter(lambda x: x % 2 == 0, map(lambda x: x + 1, count())), 5))
-# 30
 ```
 
 ---

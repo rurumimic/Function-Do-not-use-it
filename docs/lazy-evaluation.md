@@ -2,21 +2,13 @@
 
 ## 함수형 프로그래밍의 구성 요소
 
-- [example.clj](../src/hof/example.clj)
-
-```clojure
-(->> (range)
-     (map inc)
-     (filter even?)
-     (take 5)) ;; => (2 4 6 8 10)
-```
-
 ### 데이터
 
 - 값, 결과물
 
 ```clojure
 (range) ;; => (0 1 2 3 4 5 6 7 8 9 10 11 ...)
+'("peter" "steve" "tony") ;; => ("peter" "steve" "tony")
 ```
 
 ### 계산
@@ -27,8 +19,9 @@
 - 테스트하기 쉽다.
 
 ```clojure
-(map inc)      ;; => (1 2 3 4 5 6 7 8 9 10 11...)
-(filter even?) ;; => (  2   4   6   8   10   ...)
+(map inc)      ;; => (1 2 3 4 5 6 7 8 9 ...)
+(filter even?) ;; => (2 4 6 8 10 ...)
+(take 5)       ;; => (1 2 3 4 5)
 ```
 
 ### 액션
@@ -38,12 +31,13 @@
 - 다루기 어렵다. (테스트가 어렵다.)
 
 ```clojure
-(->> (range)
-     (take 5)) ;; => (0 1 2 3 4)
+(->> '("peter" "steve" "tony")
+     (getPerson))
+;; => (Spider-Man Captain-America Iron-Man)
 
-(->> (range)
-     (filter even?)
-     (take 5)) ;; => (2 4 6 8 10)
+(->> '("peter" "steve" "tony")
+     (getPerson))
+;; => Execution error (SQLException) at java.sql.DriverManager/getConnection
 ```
 
 ---

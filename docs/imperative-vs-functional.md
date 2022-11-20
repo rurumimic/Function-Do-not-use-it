@@ -52,8 +52,7 @@ x += 4;    // x + 4 = 14
 ![](../images/design.patterns.png)
 - [Functional Design Patterns](https://youtu.be/srQt1NAHYC0) by Scott Wlaschin
 
-객체지향 프로그래밍에서 자주 쓰던 **디자인 패턴은**  
-함수형 프로그래밍에서 **사라진다.**
+객체지향 프로그래밍에서 자주 쓰던 **디자인 패턴은** 함수형 프로그래밍에서 **사라진다.**
 
 디자인 패턴 → 고차 함수의 합성
 
