@@ -100,6 +100,7 @@
   - [Data Oriented Design](https://www.dataorienteddesign.com/dodbook)
   - [Learn you a haskell](http://learnyouahaskell.com/higher-order-functions)
 - Video
+  - [Why Functional Programming Matters](https://youtu.be/XrNdvWqxBvA)
   - [FP vs OOP: Choose Two](https://youtu.be/HSk5fdKbd3o) by Brian Goetz
   - [Why Isn't Functional Programming the Norm?](https://youtu.be/QyJZzq0v7Z4) by Richard Feldman
   - [Repl Driven Development](https://vimeo.com/223309989) by Chicago Clojure
