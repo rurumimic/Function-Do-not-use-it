@@ -121,7 +121,7 @@ def goodbye(name):
     return "Goodbye, " + name
 ```
 
-부분 함수 partial application:
+Partial application:
 
 ```py
 email_to = make_mail(hello)
