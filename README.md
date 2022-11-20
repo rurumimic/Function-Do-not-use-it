@@ -18,7 +18,7 @@
 
 ## 복습
 
-### 알맞은 곳에서 사용한다.
+### 알맞을 때 사용한다.
 
 > 김대리. 내가 감히 조언 하고 싶은것이 있읍니다. 다른것이 아니고, **너무 엑셀 팡션? 사용하지 마세요.** 편리함이 있다면, 위험성은 증대하죠. 소를 잡는데는 그만한 칼날이 있고 닭잡는데는 **칼이 필요 한가요?** **쉬운것이 정답 일수 있읍니다.**  
 
@@ -99,6 +99,7 @@
   - [쏙쏙 들어오는 함수형 코딩](https://jpub.tistory.com/1265)
   - [Data Oriented Design](https://www.dataorienteddesign.com/dodbook)
   - [Learn you a haskell](http://learnyouahaskell.com/higher-order-functions)
+  - [Functional Thinking](https://nealford.com/books/functionalthinking.html)
 - Video
   - [Why Functional Programming Matters](https://youtu.be/XrNdvWqxBvA)
   - [FP vs OOP: Choose Two](https://youtu.be/HSk5fdKbd3o) by Brian Goetz
@@ -108,6 +109,7 @@
   - [Lazy Data-Oriented Evaluation Strategies](https://youtu.be/Y9XEbl9bqts)
   - [OOP Is Dead, Long Live Data-oriented Design](https://youtu.be/yy8jQgmhbAU)
   - Let’s Get Lazy - [The Real Power of Functional Programming](https://youtu.be/ntWdmlrCheY)
+  - [On the Spectrum of Abstraction](https://youtu.be/mVVNJKv9esE)
 - Other
   - [Computer Languages History](https://www.levenez.com/lang/lang.pdf)
   - Dev Dive 함수형 개발자로 성장하기. Greenlabs. 2022.
