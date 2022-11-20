@@ -8,6 +8,14 @@
 | 함수   | ![](../images/xr.svg)    |
 | 도함수 | ![](../images/rxr-1.svg) |
 
+```Matlab
+f = x .^ r         % 함수
+
+g = diff(f)        % 미분(함수)
+
+g = r * x .^ (r-1) % 도함수
+```
+
 ---
 
 ### 일급 함수 first-class function
